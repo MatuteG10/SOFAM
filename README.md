@@ -1,41 +1,30 @@
-# SOFAM + Spliti — GitHub Pages
+# SOFAM
 
-Sitio estático listo para publicar con GitHub Pages.
+Sitio corporativo publico de SOFAM publicado con GitHub Pages.
 
-## URLs finales previstas
+## Publicacion
 
-- `https://sofam.com.ar/`
-- `https://sofam.com.ar/spliti/`
-- `https://sofam.com.ar/spliti/privacidad/`
-- `https://sofam.com.ar/spliti/terminos/`
+- Dominio: `https://sofam.com.ar`
+- Repositorio publico: `MatuteG10/SOFAM`
+- Branch de publicacion: `main`
+- Source de GitHub Pages: `/(root)`
+- Dominio personalizado: `sofam.com.ar`
 
-También se incluyen alias de compatibilidad:
+El archivo `CNAME` debe permanecer en la raiz del repositorio con el valor `sofam.com.ar`, y `.nojekyll` debe conservarse para que GitHub Pages publique los archivos estaticos sin procesamiento de Jekyll.
 
-- `/spliti/termin/` → `/spliti/terminos/`
-- `/spliti/privacy/` → `/spliti/privacidad/`
+## Contenido
 
-## Publicar en GitHub Pages
+Este repositorio contiene:
 
-1. Crear un repositorio nuevo en GitHub.
-2. Subir todos los archivos de esta carpeta a la rama `main`.
-3. Ir a **Settings → Pages**.
-4. En **Build and deployment**, elegir **Deploy from a branch**.
-5. Seleccionar **main** y **/(root)**.
-6. Guardar.
+- landing corporativa de SOFAM;
+- landing publica de Spliti en `/spliti/`;
+- documento legal unificado de Spliti en `/spliti/legal/`;
+- redirects estaticos para las URLs legales especificas usadas por tiendas y enlaces historicos.
 
-GitHub publicará primero una URL del tipo:
+La landing publica y los documentos legales de Spliti forman parte del sitio corporativo de SOFAM. No son el codigo fuente real de la aplicacion.
 
-`https://TU-USUARIO.github.io/NOMBRE-DEL-REPO/`
+## Separacion de repositorios
 
-## Usar `sofam.com.ar`
+El codigo fuente real de la aplicacion Spliti vive en el repositorio privado `MatuteG10/Spliti`.
 
-Cuando quieras conectar el dominio:
-
-1. Renombrá `CNAME.example` a `CNAME`.
-2. Hacé commit y push.
-3. En **Settings → Pages → Custom domain**, indicá `sofam.com.ar`.
-4. Configurá los registros DNS que GitHub te indique en el proveedor que administra tu dominio.
-
-## Nota técnica
-
-El sitio anterior estaba planteado con archivos PHP. GitHub Pages no ejecuta PHP, por eso esta versión está convertida a HTML/CSS estático y no requiere servidor.
+Este repositorio no debe incluir codigo fuente movil, APK, AAB, credenciales, archivos `.env`, configuraciones privadas ni backend privado de Spliti.
